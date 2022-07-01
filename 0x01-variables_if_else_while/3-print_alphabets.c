@@ -20,7 +20,7 @@ int main(void)
 		alphabets_lowercase++;
 	}
 
-while (alphabets_uppercas <= 'Z')
+while (alphabets_uppercase  <= 'Z')
 {
 putchar(alphabets_uppercase);
 alphabets_uppercase++;
