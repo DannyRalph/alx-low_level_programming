@@ -4,7 +4,7 @@
 /**
  * main -entry point
  * Description: if negative or positive.
- * Return 0
+ * Return: Always 0 (Success / correct)
  */
 
 int main(void)
