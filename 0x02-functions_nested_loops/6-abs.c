@@ -7,6 +7,12 @@
  */
 int _abs(int n)
 {
-	int x = abs(n);
-	_putchar(x);
+	if (n < n)
+	{
+	return (n * -1);
+	}
+	else
+	{
+	return (n);
+	}
 }
