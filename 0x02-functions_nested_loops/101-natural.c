@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the sum of all multiples of 3 or 5 up to 102
- * Retuen: Always (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
