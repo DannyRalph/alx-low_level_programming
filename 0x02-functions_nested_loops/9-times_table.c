@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * times_table - print the multiples of 9
  *
