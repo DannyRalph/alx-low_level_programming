@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * times_table - prints time tables of 9
+ * times_table - print the multiples of 9
  *
  * Return: Always 0.
  */
@@ -12,22 +13,35 @@ void times_table(void)
 	{
 		for (i = 0; i <= 9; i++)
 		{
-			g = (a * i);
-			if ((g / 10) > 0)
+			g = a * i;
+			if ((g / 10) == 0)
 			{
-				_putchar((g / 10) + '0');
+				if (i == 0)
+				{
+					_putchar ('0');
+				}
+				if (i != 0)
+				{
+					_putchar(' ');
+					_putchar((a % 10) + '0');
+				}
+				if (i < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
-				_putchar(' ');
-			}
-			_putchar((g % 10) + '0');
-			if (i < 9)
-			{
-				_putchar(' ');
-				_putchar(',');
+				_putchar((g / 10) + '0');
+				_putchar((g % 10) + '0');
+				if (i < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
