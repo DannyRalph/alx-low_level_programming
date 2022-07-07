@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - draws a staright line
+ * print_line - draws a straight line
  * @n: integer parameter
- * Return: success
  */
 void print_line(int n)
 {
-	int a = 0;
+	int m;
 
-	while (a < n && n > 0)
+	if (n <= 0)
+		_putchar('\n');
+	else
 	{
-		_putchar('_');
-		a++;
+		for (m = 0; m < n; m++)
+			_putchar(95);
+		_putchar('\n');
 	}
+}
