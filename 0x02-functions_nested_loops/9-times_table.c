@@ -2,7 +2,7 @@
 /**
  * times_table - print the multiples of 9
  *
- * Return: Always 0.
+ * Return: void
  */
 void times_table(void)
 {
