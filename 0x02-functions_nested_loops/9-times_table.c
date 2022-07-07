@@ -1,47 +1,42 @@
 #include "main.h"
+
 /**
- * times_table - print the multiples of 9
+ * times_table - prints the 9 times table
  *
  * Return: void
  */
+
 void times_table(void)
 {
-	int a, i, g;
+	int r, c, p, t, o;
 
-	for (a = 0; a <= 9; a++)
+	for (r = 0; r <= 9; r++)
 	{
-		for (i = 0; i <= 9; i++)
+		for (c = 0; c <= 9; c++)
 		{
-			g = a * i;
-			if ((g / 10) == 0)
+			p = r * c;
+			t = p / 10;
+			o = p % 10;
+
+			if (c == 0)
 			{
-				if (i == 0)
-				{
-					_putchar ('0');
-				}
-				if (i != 0)
-				{
-					_putchar(' ');
-					_putchar((a % 10) + '0');
-				}
-				if (i < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar('0');
+			}
+			else if (p < 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(o + '0');
 			}
 			else
 			{
-				_putchar((g / 10) + '0');
-				_putchar((g % 10) + '0');
-				if (i < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
+			_putchar(t + '0');
+		_putchar(o + '0');
 			}
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
-
 }
