@@ -1,23 +1,16 @@
 #include "main.h"
 
 /**
- * print_line - prints a line
- * @n: variable
- *
- * Return: 0
+ * print_line - draws a staright line
+ * @n: integer parameter
+ * Return: success
  */
 void print_line(int n)
 {
-	int m;
+	int a = 0;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	while (a < n && n > 0)
 	{
-		for (m = 0; m <= n; m++)
-		{
-			_putchar(95);
-		}
-		_putchar('\n');
+		_putchar('_');
+		a++;
 	}
-}
