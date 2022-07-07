@@ -2,17 +2,26 @@
 
 /**
  * more_numbers -> print more numbers
+ *
+ * Return: void
  */
 
 void more_numbers(void)
 {
-	int m, n;
+	char m, n;
+	int i = 0;
 
-	for (n = 0; n < 10; n++)
+	for (i = 0; i < 10; i++)
 	{
-		for (m = 0; m < 15; m++)
+		for (m = 0; m <= 14; m++)
 		{
-			_putchar(m + '0');
+			n = m;
+			if (m > 9)
+			{
+				_putchar('1');
+				n = m % 10;
+			}
+			_putchar(n + '0');
 		}
 		_putchar('\n');
 	}
