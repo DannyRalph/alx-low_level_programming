@@ -21,7 +21,7 @@ int main(void)
 			if (n < m)
 				printf("Buzz ");
 			else
-				print("Buzz");
+				printf("Buzz");
 		}
 		else
 			printf("%d ", n);
