@@ -3,21 +3,17 @@
 #include <time.h>
 
 /**
- * main - generates random passwords
- * Return: zero
+ * main - main entry point
+ *
+ * Return: Always Success
  */
+
 int main(void)
 {
-	int sum;
-	char c;
+	int num;
 
-	srand(time(NULL));
-	while (sum <= 2645)
-	{
-		c = rand() % 128;
-		sum += c;
-		putchar(c);
-	}
-	putchar(2772 - sum);
+	srand(time(0));
+	num = rand();
+	printf("%i\n", num);
 	return (0);
 }
