@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - add new line
- * Return: Always success
- */
 int main(void)
 {
 	int n;
