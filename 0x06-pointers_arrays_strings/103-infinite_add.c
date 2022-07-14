@@ -8,7 +8,7 @@
  *
  * Return: Pointer.
  */
-char *infinite_add(char *n1, char *n2, char *r, intn)
+char *infinite_add(char *n1, char *n2, char *r, int n)
 {
 	int len1 = 0, len2 = 0;
 	int add = 0;
