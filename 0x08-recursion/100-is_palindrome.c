@@ -8,7 +8,7 @@
 int find_strlen(char *s)
 {
 	if (*s == '\0')
-		return (0)
+		return (0);
 	else
 		return (1 + find_strlen(s + 1));
 }
@@ -31,6 +31,7 @@ int compare(char *s, int n1, int n2)
 			return (1);
 		return (0 + compare(s, n1 + 1, n2 - 1));
 	}
+return (0);
 }
 
 /**
