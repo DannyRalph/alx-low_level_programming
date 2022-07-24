@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the function
- * @argc: counts the arguments of the functions
+ * @argc: counts the arguments of the function
  * @argv: Array name
- *
- * Return: Return always  0 success.
- **/
+ * Return: Return always success.
+ */
 int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
@@ -41,15 +41,13 @@ int main(int argc, char *argv[])
 				cents -= 1;
 				coins++;
 			}
+
 		}
 	}
 	else
 	{
 		printf("Error\n");
-		return (1);
 	}
-	printf("%d\n", coins);
-return (0);
+printf("%d\n", coins);
 }
-
 
