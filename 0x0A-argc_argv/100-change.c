@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints the function
- * @argc: counts the arguments of the function
+ * @argc: counts the arguments of the functions
  * @argv: Array name
- * Return: Return always success
- */
-
+ *
+ * Return: Return always success.
+ **/
 int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
@@ -15,7 +14,6 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		cents = atoi(*(argv + 1));
-
 		while (cents > 0)
 		{
 			if (cents % 25 < cents)
@@ -53,3 +51,5 @@ int main(int argc, char *argv[])
 	printf("%d\n", coins);
 	return (0);
 }
+
+
