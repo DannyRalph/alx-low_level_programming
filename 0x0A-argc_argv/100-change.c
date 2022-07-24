@@ -5,7 +5,7 @@
  * @argc: counts the arguments of the functions
  * @argv: Array name
  *
- * Return: Return always success.
+ * Return: Return always  0 success.
  **/
 int main(int argc, char *argv[])
 {
@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	printf("%d\n", coins);
-	return (0);
 }
 
 
