@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	if (dest == NULL)
 		return (NULL);
 
-	for (index = 0; index < length; length)
+	for (index = 0; index < length; index++)
 	{
 		dest[index] = str[index];
 	}
